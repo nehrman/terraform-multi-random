@@ -1,4 +1,4 @@
-/*resource "random_id" "random" {
+resource "random_id" "random" {
   keepers = {
     uuid = uuid()
   }
@@ -9,13 +9,3 @@
 output "random" {
   value = "Basic Test Output: ${random_id.random.hex}"
 }
-*/
-
-resource "random_id" "random" {
-  wrong = "This will fail."
-}
-
-output "random" {
-  value = "Basic Test Output: ${random_id.random.hex}"
-}
-
